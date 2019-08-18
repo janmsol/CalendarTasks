@@ -1,0 +1,21 @@
+#leftBox
+{
+    float: left;
+    width: 50%;
+}
+
+#rightBox
+{
+    margin-left: 50%;
+}
+
+#searchBox
+{
+    margin: 10px;
+}
+
+#searchBox h2
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

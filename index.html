@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+
+    <link rel="stylesheet" href="styles/index.css"/>
+
+    <script src="lib/jquery-3.4.0.js"></script>
+    <script src="lib/mithril.js"></script>
+
+</head>
+<body>
+    <div id="leftBox">
+        <div>
+            <button id="searchAllBtn">Show all Tasks</button>
+            <button id="searchMonthBtn">All Tasks this Month</button>
+        </div>
+        <label for="month">Month</label>
+        <select id="month">
+            <option value="april">April</option>
+            <option value="may">Mai</option>
+        </select>
+    
+        <label for="year">Year</label>
+        <select id="year">
+            <option value="2019">2019</option>
+        </select>
+    
+        <label for="action">Action</label>
+        <select id="action">
+            <option value="show">Show Task</option>
+            <option value="add">Add Task</option>
+        </select>
+    
+        <div id="monthContainer"></div>
+        <div id="taskContainer"></div>
+
+    </div>
+    <div id="rightBox">
+        <h2>List of tasks</h2>
+        <div id="taskListContainer"></div>
+    </div>
+    
+    
+
+    <!-- mithril scripts for the months -->
+    <script src="scripts/mithrilMonths/april19.js"></script>
+    <script src="scripts/mithrilMonths/may19.js"></script>
+    
+    <script src="scripts/dbQueries.js"></script>
+    <script src="scripts/mithrilTaskList.js"></script>
+    <script src="scripts/mithrilTask.js"></script>
+    <script src="scripts/mithrilAddTask.js"></script>
+    <script src="scripts/SearchTasks.js"></script>
+
+    <script src="scripts/mithrilTaskHandler.js"></script>
+    <script src="scripts/mithrilMonthHandler.js"></script>
+   
+</body>
