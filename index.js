@@ -10,12 +10,15 @@ app.use("/", express.static(__dirname + '/'))
 
 //Setting up database connection pool
 //Brukernavn og passord må endres slik at det passer din databasetilkobling
+var username = " "
+var password = " "
+
 const pool = mySQL.createPool(
 {
     connectionLimit : 20,
     host: "localhost",
-    user: "root",
-    password: "S6TZhUAUPkphGARaF77g",
+    user: username,
+    password: password,
     database: "calendar"
 })
 
